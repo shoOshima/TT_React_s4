@@ -1,0 +1,13 @@
+.IAM{
+  background-image:url(./back.jpg);
+  width: 384px;
+  height: 512px;
+  color: white;
+  padding: 20px;
+  padding-top: 200px;
+  text-align: left;
+}
+
+.IAM-Button{
+  float: right;
+}
