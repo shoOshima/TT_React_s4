@@ -18,21 +18,25 @@ export const Iam = () =>{
   const [hobby,setHobby]=useState(hobbyArrayStr[lanJp][hobbyNo]);
 
   const lanChage = () => {
+    let lanNo =0;
     if(lanJp == 0){
       setLanJp(1);
-      setName('S●o Oh●')
+      lanNo = 1
+      setName('大● ●生')
     }else{
       setLanJp(0);
-      setName('大●　●生')
+      lanNo =0
+      setName('S●o Oh●')
     }
-    setLabelText(labelArrayStr[lanJp])
-    setHobby(hobbyArrayStr[lanJp][hobbyNo])
+    setLabelText(labelArrayStr[lanNo])
+    setHobby(hobbyArrayStr[lanNo][hobbyNo])
   }
+
   const hobbyChage = () => {
     let hNo = hobbyNo +1
     hNo >=hobbyArrayStr[lanJp].length?hNo=0:''
     setHobbyNo(hNo)
-    setHobby(hobbyArrayStr[lanJp==0?1:0][hobbyNo])
+    setHobby(hobbyArrayStr[lanJp][hNo])
   }
 
   return (
