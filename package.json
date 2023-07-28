@@ -2,6 +2,7 @@
   "name": "ssr-app",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "homepage": "https://shooshima.github.io/TT_React_s4",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -13,6 +14,8 @@
     "@types/react-dom": "^18.2.7",
     "@types/react-router-dom": "^5.3.3",
     "express": "^4.18.2",
+    "esm": "^3.2.25",
+    "node": "^20.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
@@ -27,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**",
-    "preformat": "prettier --write src/**"
+    "preformat": "prettier --write src/**",
+    "server":"node -r esm index.js",
+    "watch": "webpack --mode development --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -55,10 +60,16 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "gh-pages": "^5.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "author": "",
   "license": "ISC"
 }
