@@ -7,26 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/sub */ \"./src/sub.js\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar express = __webpack_require__(/*! express */ \"express\");\n\n// import path from 'path'\n// import express from 'express'\n\nvar app = express(); //,\n// DIST_DIR = __dirname,\n// HTML_FILE = path.join(DIST_DIR,'index.html')\nvar port = 9000;\n\n// app.use(express.static(DIST_DIR))\napp.get('/', function (req, res) {\n  // res.send('Hello World!')\n  res.send((0,_src_sub__WEBPACK_IMPORTED_MODULE_0__.add)(1, 2));\n  // res.sendFile(HTML_FILE)\n  // hello()\n});\n\napp.listen(port, function () {\n  console.log(\"Example app listening on port \".concat(port));\n});\n\n//# sourceURL=webpack://server/./index.js?");
-
-/***/ }),
-
-/***/ "./src/sub.js":
-/*!********************!*\
-  !*** ./src/sub.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   add: () => (/* binding */ add),\n/* harmony export */   hello: () => (/* binding */ hello)\n/* harmony export */ });\n// export文を使ってhello関数を定義する。\nfunction hello() {\n  alert(\"helloメソッドが実行された。\");\n}\nfunction add(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack://server/./src/sub.js?");
+eval("var path = __webpack_require__(/*! path */ \"path\");\nvar express = __webpack_require__(/*! express */ \"express\");\n\n// import path from 'path'\n// import express from 'express'\n// import { hello,add } from './src/sub'\n\nvar app = express(); //,\n// DIST_DIR = __dirname,\n// HTML_FILE = path.join(DIST_DIR,'index.html')\nvar port = 9000;\n\n// app.use(express.static(DIST_DIR))\napp.get('/', function (req, res) {\n  res.send('Hello World!');\n  // res.send(add(1,2))\n  // res.sendFile(HTML_FILE)\n  // hello()\n});\n\napp.listen(port, function () {\n  console.log(\"Example app listening on port \".concat(port));\n});\n\n//# sourceURL=webpack://server/./index.js?");
 
 /***/ }),
 
@@ -36,6 +25,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("express");
 
 /***/ }),
@@ -46,6 +36,7 @@ module.exports = require("express");
   \***********************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("path");
 
 /***/ })
@@ -75,35 +66,6 @@ module.exports = require("path");
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
