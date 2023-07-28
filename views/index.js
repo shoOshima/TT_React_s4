@@ -2,7 +2,6 @@
 
 var _react = _interopRequireDefault(require("react"));
 var _client = require("react-dom/client");
-require("./index.css");
 var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // const root = ReactDOM.createRoot(
