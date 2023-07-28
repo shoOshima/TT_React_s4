@@ -4,6 +4,7 @@
 import path from 'path'
 import express from 'express'
 import test from './views/test'
+import appp from './views/appp'
 
 const app = express() //,
           // DIST_DIR = __dirname,
@@ -12,7 +13,7 @@ const port = 9000
 
 app.use(express.static('assets'))
 app.get('/', (req, res) => {
-  const response = test();
+  const response = appp();
    res.send(response)
   // res.send(add(1,2))
   // res.sendFile(HTML_FILE)

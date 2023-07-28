@@ -1,8 +1,8 @@
 import React from "react";
 import { renderToString } from 'react-dom/server';
-import CountUp from "./CountUp";
+import Iam from "./Iam";
 
-const test = () => (`
+const test = ():string => (`
 <html>
   <head>
     <title>CountUp</title>
@@ -10,7 +10,7 @@ const test = () => (`
   </head>
   <body>
     <div id="app">
-      <p>${renderToString(<CountUp />)}</p>
+      <p>${renderToString(<Iam />)}</p>
     </div>
     <script src="./client.js"></script>
   </body>

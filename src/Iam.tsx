@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Iam.css"
+ import "./Iam.css"
 
-export const Iam = () =>{
+const Iam = () =>{
   const [lanJp,setLanJp] = useState(1)
   const [name,setName] = useState('大●　●生')
   const [old,setOld] = useState(32)
