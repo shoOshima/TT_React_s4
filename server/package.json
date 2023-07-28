@@ -18,6 +18,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
+    "server":"node -r esm index.js",
     "version": "webpack -v",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
