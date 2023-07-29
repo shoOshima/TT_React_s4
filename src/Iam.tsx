@@ -1,5 +1,5 @@
 import React, { useState } from "react";
- import "./Iam.css"
+import "./Iam.css"
 
 const Iam = () =>{
   const [lanJp,setLanJp] = useState(1)
@@ -53,6 +53,11 @@ const Iam = () =>{
     </div>
 
   );
+  // return(
+
+  //     <p>test</p>
+
+  // );
 }
 
 export default Iam;

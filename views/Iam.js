@@ -94,6 +94,11 @@ var Iam = function Iam() {
     className: "IAM-Button",
     onClick: hobbyChage
   }, "\u25B6"), /*#__PURE__*/_react.default.createElement("p", null, labelText[2], " : ", hobby), /*#__PURE__*/_react.default.createElement("p", null, labelText[4], " "));
+  // return(
+
+  //     <p>test</p>
+
+  // );
 };
 var _default = Iam;
 exports.default = _default;

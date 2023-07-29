@@ -4,7 +4,7 @@ import { hydrateRoot } from 'react-dom/client';
 // import CountUp from './CountUp'
 import Iam from './Iam';
 
-// hydrate(<CountUp />,document.querySelector('#app'));
+// hydrate(<Iam />,document.querySelector('#app'));
 
-const domNode = document.getElementById('app') as HTMLElement;
+const domNode = document.querySelector('#app')as HTMLElement;
 hydrateRoot(domNode,<Iam />);
