@@ -75,7 +75,7 @@ var Iam = function Iam() {
     setHobbyNo(hNo);
     setHobby(hobbyArrayStr[lanJp][hNo]);
   };
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: "IAM"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "IAM-Button",
@@ -93,7 +93,7 @@ var Iam = function Iam() {
   }, "-"), /*#__PURE__*/_react.default.createElement("p", null, labelText[1], " : ", old), /*#__PURE__*/_react.default.createElement("button", {
     className: "IAM-Button",
     onClick: hobbyChage
-  }, "\u25B6"), /*#__PURE__*/_react.default.createElement("p", null, labelText[2], " : ", hobby), /*#__PURE__*/_react.default.createElement("p", null, labelText[4], " ")));
+  }, "\u25B6"), /*#__PURE__*/_react.default.createElement("p", null, labelText[2], " : ", hobby), /*#__PURE__*/_react.default.createElement("p", null, labelText[4], " "));
 };
 var _default = Iam;
 exports.default = _default;

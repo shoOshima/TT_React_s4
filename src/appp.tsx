@@ -10,7 +10,7 @@ const test = ():string => (`
   </head>
   <body>
     <div id="app">
-      <p>${renderToString(<Iam />)}</p>
+      ${renderToString(<Iam />)}
     </div>
     <script src="./client.js"></script>
   </body>

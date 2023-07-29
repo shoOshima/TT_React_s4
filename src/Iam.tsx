@@ -40,7 +40,7 @@ const Iam = () =>{
   }
 
   return (
-    <>
+
     <div className="IAM">
     <button className="IAM-Button" onClick={lanChage}>{labelText[3]}</button>
       <h3>The自己紹介</h3>
@@ -51,7 +51,7 @@ const Iam = () =>{
       <p>{labelText[2]} : {hobby}</p>
       <p>{labelText[4]} </p>
     </div>
-    </>
+
   );
 }
 
